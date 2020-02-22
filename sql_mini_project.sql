@@ -121,5 +121,4 @@ else (slots*membercost) end) as Total_Revenue
 FROM Bookings
 JOIN Facilities ON Facilities.facid=Bookings.facid
 group by 1
-having Total_Revenue > 1000
-order by 2
+having Total_Revenue < 1000
